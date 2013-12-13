@@ -12,7 +12,7 @@
         'javahome%': "<!(echo $JAVA_HOME)"
       }],
       ['OS=="mac"', {
-      	'javaver%' : "<!(awk -F/ -v h=$JAVA_HOME 'BEGIN {n=split(h, a); print a[2]; exit}')"
+        'javaver%' : "<!(awk -F/ -v h=$JAVA_HOME 'BEGIN {n=split(h, a); print a[2]; exit}')"
       }]
     ]
   },
